@@ -2,7 +2,7 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
   router: {
-    base: '/s256-site/'
+    base: '/s256-site/',
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
