@@ -2,7 +2,7 @@
   <div ref="wrap" class="wrap">
     <div class="table">
       <label>
-        <span>Скорость: от 1 до много, пример: 1.5, 3, 10</span>
+        <span>Скорость: число(0.5, 1, 5)</span>
         <input v-model.number="speed" />
       </label>
       <label>
@@ -48,7 +48,7 @@ export default {
         this.replaceVerticalScrollByHorizontal,
         50,
         {
-          passive: false,
+          passive: true,
         }
       )
     }
