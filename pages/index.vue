@@ -48,7 +48,7 @@ export default {
         this.replaceVerticalScrollByHorizontal,
         50,
         {
-          passive: true,
+          passive: false,
         }
       )
     }
@@ -62,7 +62,7 @@ export default {
           left: wrap.scrollLeft + event.deltaY * this.speed,
           behavior: this.behavior,
         })
-        event.preventDefault()
+        // event.preventDefault()
       }
     },
   },
