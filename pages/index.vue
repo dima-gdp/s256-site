@@ -43,26 +43,21 @@ export default {
   mounted() {
     const mediaQuery = window.matchMedia('(min-width: 770px)')
     if (mediaQuery.matches) {
-      window.addEventListener(
-        'wheel',
-        this.replaceVerticalScrollByHorizontal,
-        50,
-        {
-          passive: false,
-        }
-      )
+      window.addEventListener('wheel', this.replaceVerticalScrollByHorizontal, {
+        passive: false,
+      })
     }
   },
 
   methods: {
     replaceVerticalScrollByHorizontal(event) {
       if (event.deltaY !== 0) {
+        event.preventDefault()
         const wrap = this.$refs.wrap
         wrap.scrollTo({
           left: wrap.scrollLeft + event.deltaY * this.speed,
           behavior: this.behavior,
         })
-        // event.preventDefault()
       }
     },
   },
@@ -106,15 +101,17 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  overflow-y: hidden;
+  overflow-y: auto;
   //height: 3000px;
   overflow-x: scroll;
+  overscroll-behavior: none;
 }
 
 .section,
 .section-1,
 .section-2 {
   flex: 0 0 auto;
+  min-height: 600px;
   //height: 3000px;
 }
 
