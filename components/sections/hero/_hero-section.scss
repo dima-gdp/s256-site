@@ -1,7 +1,103 @@
+//  Не по бему чуть
 .hero {
   width: 100vw;
+  padding-top: 42px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-right: 95px;
+
+  @media(min-width: $breakpoint-md) {
+    margin-right: 169px;
+  }
 
   &__title {
+    position: absolute;
+    bottom: 11px;
+    left: 12px;
     color: $color-main-snow;
+    font-size: 28px;
+    z-index: 1;
+
+    @media(min-width: $breakpoint-xs) {
+      @include adaptive-by-width(font-size, 45, 28, 600, 320)
+    }
+
+    @media(min-width: $breakpoint-md) {
+      left: 24px;
+      bottom: 15px;
+
+      @include adaptive-by-width(font-size, 64, 40, 1070, 600)
+    }
+
+    @media(min-width: 1070px) {
+      font-size: 64px;
+    }
+
+    span {
+      display: block;
+      margin-left: 0;
+      @media(min-width: $breakpoint-md) {
+        &:nth-child(2) {
+          @include adaptive-by-width(margin-left, 173, 0, 1070, 600)
+        }
+      }
+
+      @media(min-width: 1070px) {
+        &:nth-child(2) {
+          margin-left: 173px;
+        }
+      }
+    }
+  }
+
+  &__bg {
+    max-width: 905px;
+    font-size: 0;
+
+    @media(max-height: 735px) {
+      @include adaptive-by-height(max-width, 905, 700, 735, 600)
+    }
+
+    @media(max-height: 600px) {
+      max-width: 700px;
+    }
+  }
+}
+
+.hero-cursor {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  right: 20px;
+  bottom: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $color-main-acid;
+  border-radius: 100%;
+  @media(min-width: $breakpoint-md) {
+    width: 64px;
+    height: 64px;
+    bottom: 60px;
+    @include adaptive-by-width(right, 69, 24, 1070, 600)
+  }
+
+  @media(min-width: 1070px) {
+    right: 69px;
+  }
+
+  &__mouse {
+    display: none;
+    @media(min-width: $breakpoint-md) {
+      display: flex;
+    }
+  }
+
+  &__arrows {
+    @media(min-width: $breakpoint-md) {
+      display: none;
+    }
   }
 }

@@ -1,17 +1,19 @@
 <template>
-  <div class="section-1 container">
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, illum
-    recusandae? Corporis magni iusto temporibus aliquam harum reiciendis, eos
-    ratione ut. Quos earum et debitis maxime porro vitae facilis voluptate!
+  <div class="use container">
+    <div class="use__container">
+      <p class="use__text text-big">
+        Мы&nbsp;используем комплексный подход в&nbsp;работе: отталкиваясь от&nbsp;стратегии
+        компании, проектируем и&nbsp;внедряем функционал, анализируем опыт
+        и&nbsp;двигаемся дальше.
+      </p>
+      <p class="use__text text-big">
+        Наши клиенты&nbsp;— это компании, которые хотят привлечь диджитал-компетенции
+        в&nbsp;свой бизнес, понимают их&nbsp;важность и&nbsp;ценность в&nbsp;современном мире.
+      </p>
+    </div>
   </div>
 </template>
 
-<script>
-export default {
-  name: 'we-use',
-}
-</script>
-
 <style lang="scss">
-@import "use-section";
+@import 'use-section';
 </style>
