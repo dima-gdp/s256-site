@@ -56,3 +56,13 @@ body {
     line-height: 1.5;
   }
 }
+
+@keyframes spin {
+  0% {
+    transform:translateX(100%) rotate(0deg) ;
+  }
+
+  100% {
+      transform:translateX(100%) rotate(360deg);
+  }
+}

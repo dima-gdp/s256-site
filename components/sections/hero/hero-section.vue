@@ -1,7 +1,10 @@
 <template>
   <section class="hero container" ref="hero">
     <h1 ref="title" class="hero__title text-h1">
-      <span>Мы Создаём</span>
+      <span>
+        <span>Мы Создаём</span>
+        <IconText class="hero__icon-text" />
+        </span>
       <span>Надёжные и красивые</span>
       <span>Веб-сайты и сервисы</span>
     </h1>
@@ -12,7 +15,6 @@
 
     <div class="hero-cursor">
       <IconMouse class="hero-cursor__mouse" />
-      <IconChevronRight class="hero-cursor__arrows" />
     </div>
 
     <div class="hero__bg">
@@ -50,11 +52,13 @@
         <img src="~/assets/images/hero-bg.png" alt="" />
       </picture>
     </div>
+
+
   </section>
 </template>
 
 <script>
-import { IconMouse, IconChevronRight } from '~/components/icons'
+import { IconMouse, IconText } from '~/components/icons'
 import { debounce } from '~/utils'
 
 const OFFSETS = {
@@ -68,7 +72,7 @@ const sumOffsets = Object.values(OFFSETS).reduce((prev, cur) => cur + prev, 0)
 export default {
   components: {
     IconMouse,
-    IconChevronRight,
+    IconText,
   },
 
   data() {

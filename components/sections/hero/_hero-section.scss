@@ -16,6 +16,9 @@
     position: absolute;
     bottom: 11px;
     left: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     color: $color-main-snow;
     font-size: 28px;
     z-index: 1;
@@ -36,8 +39,12 @@
     }
 
     span {
-      display: block;
       margin-left: 0;
+
+      &:first-child {
+        position: relative;
+      }
+
       @media(min-width: $breakpoint-md) {
         &:nth-child(2) {
           @include adaptive-by-width(margin-left, 173, 0, 1070, 600)
@@ -74,36 +81,55 @@
         object-position: bottom;
       }
     }
-
-    // @media(max-height: 735px) {
-    //   @include adaptive-by-height(max-width, 905, 700, 735, 600)
-    // }
-
-    // @media(max-height: 600px) {
-    //   max-width: 700px;
-    // }
-
-
-
-
   }
 
     // .hero__decor
     &__decor {}
+
+    &__icon-text {
+      position: absolute;
+      bottom: 20px;
+      right: -10px;
+      width: 100px;
+      height: 100px;
+      transform: translateX(100%);
+      animation:spin 20s linear infinite;
+
+      @media(min-width: 440px) {
+        right: -30px;
+        bottom: 30px;
+      }
+
+      @media(min-width: $breakpoint-xs) {
+        @include adaptive-by-width(width, 200, 100, 1336, 320);
+        @include adaptive-by-width(height, 200, 100, 1336, 320);
+      }
+
+      @media(min-width: 1336px) {
+        width: 200px;
+        height: 200px;
+        right: -30px;
+        bottom: 30px;
+        @media(max-height: 600px) {
+          width: 160px;
+          height: 160px;
+        }
+      }
+    }
 }
 
 .hero-cursor {
-  width: 48px;
-  height: 48px;
+  display: none;
   position: absolute;
-  right: 20px;
-  bottom: 200px;
-  display: flex;
+  right: 0;
   justify-content: center;
   align-items: center;
   background: $color-main-acid;
   border-radius: 100%;
+  z-index: 1;
+
   @media(min-width: $breakpoint-md) {
+    display: flex;
     width: 64px;
     height: 64px;
     bottom: 60px;
@@ -118,12 +144,6 @@
     display: none;
     @media(min-width: $breakpoint-md) {
       display: flex;
-    }
-  }
-
-  &__arrows {
-    @media(min-width: $breakpoint-md) {
-      display: none;
     }
   }
 }
