@@ -1,12 +1,14 @@
 .use {
-  width: 280px;
-  flex: 0 0 280px;
+  width: 100vw;
+  flex: 0 0 100vw;
   margin-right: 65px;
+  padding: 42px 20px;
 
   @media(min-width: $breakpoint-md) {
     margin-right: 160px;
     width: 723px;
     flex: 0 0 723px;
+    padding: 42px 0;
   }
 
   &__container {
@@ -20,7 +22,11 @@
     color: $color-main-ash;
     font-size: 18px;
 
-    @media(min-width: $breakpoint-md) {
+    @media(min-width: $breakpoint-xs) {
+      @include adaptive-by-width(font-size, 32, 18, 1336, 320)
+    }
+
+    @media(min-width: 1336px) {
       font-size: 32px;
     }
 
