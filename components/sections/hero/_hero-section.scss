@@ -6,10 +6,13 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin-right: 95px;
 
   @media(min-width: $breakpoint-md) {
-    margin-right: 169px;
+    @include adaptive-by-width(margin-right, 230, 30, 1336, 600);
+  }
+
+  @media(min-width: 1336px) {
+    margin-right: 230px;
   }
 
   &__title {

@@ -57,6 +57,16 @@ body {
   }
 }
 
+.text-super {
+  font-family: "Grandis";
+  font-weight: 500;
+  line-height: 1.33 ;
+
+  @media(min-width: $breakpoint-md) {
+    line-height: 1.25;
+  }
+}
+
 @keyframes spin {
   0% {
     transform:translateX(100%) rotate(0deg) ;

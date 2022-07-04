@@ -1,14 +1,18 @@
 .use {
   width: 100vw;
   flex: 0 0 100vw;
-  margin-right: 65px;
+  margin-right: 35px;
   padding: 42px 20px;
 
-  @media(min-width: $breakpoint-md) {
-    margin-right: 160px;
+  @media(min-width: 724px) {
+    @include adaptive-by-width(margin-right, 160, 45, 1336, 724);
     width: 723px;
     flex: 0 0 723px;
     padding: 42px 0;
+  }
+
+  @media(min-width: 1336px) {
+    margin-right: 160px;
   }
 
   &__container {
@@ -23,10 +27,10 @@
     font-size: 18px;
 
     @media(min-width: $breakpoint-xs) {
-      @include adaptive-by-width(font-size, 32, 18, 1336, 320)
+      @include adaptive-by-width(font-size, 32, 18, 724, 320)
     }
 
-    @media(min-width: 1336px) {
+    @media(min-width: 724px) {
       font-size: 32px;
     }
 
