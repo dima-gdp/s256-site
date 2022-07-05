@@ -67,6 +67,18 @@ body {
   }
 }
 
+.text-large {
+  font-family: 'Grandis Condensed';
+  line-height: 76px;
+  font-weight: 400;
+
+  @media(min-width: $breakpoint-md) {
+    font-style: normal;
+    font-weight: 500;
+    line-height: 240px;
+  }
+}
+
 @keyframes spin {
   0% {
     transform:translateX(100%) rotate(0deg) ;
