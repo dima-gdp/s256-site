@@ -3,6 +3,7 @@
     <HeroSection />
     <UseSection />
     <SpecializationSection />
+    <CompetenciesSection />
   </main>
 </template>
 
@@ -10,9 +11,10 @@
 import HeroSection from '~/components/sections/hero/hero-section'
 import UseSection from '~/components/sections/use/use-section'
 import SpecializationSection from '~/components/sections/specialization/specialization-section'
+import CompetenciesSection from '~/components/sections/competencies/competencies-sections'
 
 export default {
-  components: { HeroSection, UseSection, SpecializationSection },
+  components: { HeroSection, UseSection, SpecializationSection, CompetenciesSection },
   data() {
     return {}
   },
