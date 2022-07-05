@@ -1,10 +1,16 @@
 <template>
-  <main ref="main" class="main-page">
-    <HeroSection />
-    <UseSection />
-    <SpecializationSection />
+  <div class="wrapper">
+    <Header
+      :is-mob-menu-opened="isMobMenuOpened"
+      @click-burger="toggleMobMenu"
+    />
+    <main ref="main" class="main-page">
+      <HeroSection />
+      <UseSection />
+      <SpecializationSection />
     <CompetenciesSection />
   </main>
+  </div>
 </template>
 
 <script>
@@ -12,11 +18,15 @@ import HeroSection from '~/components/sections/hero/hero-section'
 import UseSection from '~/components/sections/use/use-section'
 import SpecializationSection from '~/components/sections/specialization/specialization-section'
 import CompetenciesSection from '~/components/sections/competencies/competencies-sections'
+import Header from '~/components/base/header/header'
 
 export default {
-  components: { HeroSection, UseSection, SpecializationSection, CompetenciesSection },
+  components: { HeroSection, UseSection, SpecializationSection, Header, CompetenciesSection },
+
   data() {
-    return {}
+    return {
+      isMobMenuOpened: false,
+    }
   },
 
   mounted() {
@@ -31,6 +41,8 @@ export default {
 
   methods: {
     replaceVerticalScrollByHorizontal(event) {
+      if (this.isMobMenuOpened) return
+
       if (event.deltaY !== 0) {
         event.preventDefault()
         const main = this.$refs.main
@@ -39,6 +51,10 @@ export default {
           behavior: 'auto',
         })
       }
+    },
+
+    toggleMobMenu(isOpened) {
+      this.isMobMenuOpened = isOpened
     },
   },
 }

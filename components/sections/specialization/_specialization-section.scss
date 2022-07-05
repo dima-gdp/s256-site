@@ -2,14 +2,18 @@
   width: 100vw;
   flex: 0 0 100vw;
   margin-right: 62px;
-  padding: 42px 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+
 
   @media(min-width: 1078px) {
     margin-right: 226px;
     width: 1048px;
     flex: 0 0 1048px;
-    padding: 42px 0;
+    padding-left: 0;
+    padding-right: 0;
   }
+
   // .specialization__container
   &__container {
     height: 100%;

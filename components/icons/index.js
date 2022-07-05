@@ -10,11 +10,16 @@ import IconInstrumentConnection from './icon-instrument-connection.vue'
 import IconArrows from './icon-arrows.vue'
 import IconMarketing from './icon-marketing.vue'
 import IconTypesOfIntegrations from './icon-types-of-integrations.vue'
+import IconLogo from './icon-logo.vue'
+import IconEllispse from './icon-ellipse.vue'
+import IconPhone from './icon-phone.vue'
+import IconLogoMob from './icon-logo-mob.vue'
+import IconBurger from './icon-burger.vue'
+import IconX from './icon-x.vue'
 
 export {
   IconMouse,
   IconChevronRight,
-  IconText,
   IconAnalytics,
   IconDesign,
   IconSoftware,
@@ -24,4 +29,11 @@ export {
   IconArrows,
   IconMarketing,
   IconTypesOfIntegrations,
+  IconText,
+  IconLogo,
+  IconEllispse,
+  IconPhone,
+  IconLogoMob,
+  IconBurger,
+  IconX
 }

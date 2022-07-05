@@ -2,13 +2,15 @@
   width: 100vw;
   flex: 0 0 100vw;
   margin-right: 35px;
-  padding: 42px 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media(min-width: 724px) {
     @include adaptive-by-width(margin-right, 160, 45, 1336, 724);
     width: 723px;
     flex: 0 0 723px;
-    padding: 42px 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @media(min-width: 1336px) {

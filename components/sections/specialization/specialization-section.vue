@@ -1,5 +1,5 @@
 <template>
-  <section class="specialization container">
+  <section class="specialization container padding-top padding-bottom">
     <div class="specialization__container">
       <h2 class="specialization__title text-super">
         Специализируемся на создании и&nbsp;поддержке сайтов с&nbsp;уникальным
