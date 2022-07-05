@@ -1,10 +1,10 @@
 <template>
-  <section class="hero container" ref="hero">
+  <section class="hero container padding-top" ref="hero">
     <h1 ref="title" class="hero__title text-h1">
       <span>
         <span>Мы Создаём</span>
         <IconText class="hero__icon-text" />
-        </span>
+      </span>
       <span>Надёжные и красивые</span>
       <span>Веб-сайты и сервисы</span>
     </h1>
@@ -52,8 +52,6 @@
         <img src="~/assets/images/hero-bg.png" alt="" />
       </picture>
     </div>
-
-
   </section>
 </template>
 
