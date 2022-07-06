@@ -1,7 +1,7 @@
 <template>
   <div class="portfolio container padding-top padding-bottom">
     <ul class="portfolio__list">
-      <li v-for="(p, i) in $options.porfolio" class="portfolio-item" :key="i">
+      <li v-for="(p, i) in $options.portfolio" class="portfolio-item" :key="i">
         <div class="portfolio-item__top">
           <div class="portfolio-item__title text-super">
             <span>{{ p.title }}</span>
@@ -31,67 +31,67 @@
 
 <script>
 export default {
-  porfolio: [
+  portfolio: [
     {
       title: 'Med.Studio',
       badge: 'Med.Studio',
       subtitle:
         'Онлайн-платформа для дополнительного образования медицинских сотрудников',
       sizes: '480px',
-      sourses: [
+      sources: [
         {
           type: 'image/avif',
           srcset:
-            '/images/portfolio-med.avif 480w, /images/portfolio-med-2x.avif 960w',
+            './images/portfolio-med.avif 480w, ./images/portfolio-med-2x.avif 960w',
         },
         {
           type: 'image/webp',
           srcset:
-            '/images/portfolio-med.webp 480w, images/portfolio-med-2x.webp 960w',
+            './images/portfolio-med.webp 480w, ./images/portfolio-med-2x.webp 960w',
         },
       ],
-      img: '/images/portfolio-med.png',
-      helpImg: '/images/portfolio-med-help.jpg',
+      img: './images/portfolio-med.png',
+      helpImg: './images/portfolio-med-help.jpg',
     },
     {
       title: '1С Вьетнам',
       badge: '1С Вьетнам',
       subtitle: 'Портал программных продуктов 1С для вьетнамского рынка',
       sizes: '603px',
-      sourses: [
+      sources: [
         {
           type: 'image/avif',
           srcset:
-            '/images/portfolio-1c.avif 603w, /images/portfolio-1c-2x.avif 1206w',
+            './images/portfolio-1c.avif 603w, ./images/portfolio-1c-2x.avif 1206w',
         },
         {
           type: 'image/webp',
           srcset:
-            '/images/portfolio-1c.webp 603w, images/portfolio-1c-2x.webp 1206w',
+            './images/portfolio-1c.webp 603w, ./images/portfolio-1c-2x.webp 1206w',
         },
       ],
-      img: '/images/portfolio-1c.png',
-      helpImg: '/images/portfolio-1c-help.jpg',
+      img: './images/portfolio-1c.png',
+      helpImg: './images/portfolio-1c-help.jpg',
     },
     {
       title: 'ОМК',
       badge: 'openmedcom.ru',
       subtitle: 'Проект дистанционного образования для врачей',
       sizes: '542px',
-      sourses: [
+      sources: [
         {
           type: 'image/avif',
           srcset:
-            '/images/portfolio-omc.avif 542w, /images/portfolio-omc-2x.avif 1084w',
+            './images/portfolio-omc.avif 542w, ./images/portfolio-omc-2x.avif 1084w',
         },
         {
           type: 'image/webp',
           srcset:
-            '/images/portfolio-omc.webp 542w, images/portfolio-omc-2x.webp 1084w',
+            './images/portfolio-omc.webp 542w, ./images/portfolio-omc-2x.webp 1084w',
         },
       ],
-      img: '/images/portfolio-omc.png',
-      helpImg: '/images/portfolio-omc-help.jpg',
+      img: './images/portfolio-omc.png',
+      helpImg: './images/portfolio-omc-help.jpg',
     },
   ],
 }
