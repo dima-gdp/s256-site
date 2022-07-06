@@ -9,7 +9,7 @@
 
         <ul class="header__list">
           <li v-for="(link, i) in $options.links" :key="i">
-            <a href="#">{{ link }}</a>
+            <a href="#">{{ link.name }}</a>
           </li>
         </ul>
 
@@ -45,7 +45,7 @@
         <div class="mob-menu__container">
           <ul class="mob-menu__list">
             <li v-for="(link, i) in $options.links" :key="i">
-              <a href="#">{{ link }}</a>
+              <a href="#">{{ link.name }}</a>
             </li>
           </ul>
 
@@ -84,12 +84,30 @@ export default {
   },
 
   links: [
-    'О нас',
-    'Команда',
-    'Компетенции',
-    'Кейсы',
-    'Стоимость',
-    'Технологии',
+    {
+      name: 'О нас',
+      href: '',
+    },
+    {
+      name: 'Команда',
+      href: '',
+    },
+    {
+      name: 'Компетенции',
+      href: '',
+    },
+    {
+      name: 'Кейсы',
+      href: '',
+    },
+    {
+      name: 'Стоимость',
+      href: '',
+    },
+    {
+      name: 'Технологии',
+      href: '',
+    },
   ],
 }
 </script>

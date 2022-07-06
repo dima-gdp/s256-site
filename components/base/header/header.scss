@@ -53,9 +53,14 @@
         line-height: 1.6;
         user-select: none;
         white-space: nowrap;
+        transition: color 0.3s;
 
         @media(min-width: 1256px) {
           font-size: 20px;
+        }
+
+        &:hover {
+          color: $color-main-acid;
         }
       }
     }
@@ -256,6 +261,10 @@
         line-height: 1.33;
         user-select: none;
         white-space: nowrap;
+
+        &:hover {
+          color: $color-main-acid;
+        }
       }
     }
   }
