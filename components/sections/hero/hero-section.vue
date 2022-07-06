@@ -63,6 +63,7 @@ const OFFSETS = {
   TITLE_BOTTOM: 15,
   DECOR_TOP: 64,
   ADDITIONAL: 50,
+  PB: 20,
 }
 
 const sumOffsets = Object.values(OFFSETS).reduce((prev, cur) => cur + prev, 0)
@@ -91,6 +92,9 @@ export default {
 
   methods: {
     setDecorBlock: debounce(function () {
+      const decorPT = Number.parseInt(
+        getComputedStyle(this.$refs.decor).paddingTop
+      )
       const firstDecorItem = this.$refs.decor.querySelector('span')
       const gridGapDecor = Number.parseInt(
         getComputedStyle(this.$refs.decor).gridGap
@@ -102,7 +106,8 @@ export default {
       const availableHeight =
         this.$refs.hero.offsetHeight -
         this.$refs.title.offsetHeight -
-        sumOffsets
+        sumOffsets -
+        decorPT
       const decorRowsCount = Math.ceil(availableHeight / decorItemSize)
       const decorColsCount = Math.ceil(
         this.$refs.decor.offsetWidth / decorItemSize

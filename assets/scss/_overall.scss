@@ -82,6 +82,15 @@ body {
   }
 }
 
+.text-main {
+  font-family: "Grandis";
+  line-height: 1.5;
+
+  @media(min-width: $breakpoint-md) {
+    line-height: 1.6;
+  }
+}
+
 
 /*fade*/
 .fade-enter-active,

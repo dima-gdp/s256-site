@@ -31,7 +31,6 @@
               "
               sizes="340px"
             />
-            <source srcset="~/assets/images/hero-bg-mobile.png" />
             <img src="~/assets/images/hero-bg.png" alt="" />
           </picture>
         </div>
