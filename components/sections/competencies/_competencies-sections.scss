@@ -1,0 +1,143 @@
+.competencies {
+  display: flex;
+  justify-content: center;
+
+  // .competencies__container
+  &__container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1495px;
+    @include adaptive-by-width(margin-right, 200, 50, 1495, 300);
+  }
+
+  // .competencies__content
+  &__content {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+
+    @media(min-width: 601px) {
+      flex-direction: row;
+      margin-bottom: 60px;
+      margin-left: 80px;
+      margin-right: 50px;
+    }
+
+    @media(min-width: 1300px) {
+      order: 0;
+      margin-bottom: 0;
+      margin-left: 60px;
+      margin-right: 0px;
+    }
+  }
+
+  // .competencies__box
+  &__box {
+    display: flex;
+    justify-content: flex-start;
+    @media(min-width: 1300px) {
+      justify-content: center
+    }
+  }
+
+  // .competencies__title
+  &__title {
+    display: flex;
+    color: $color-main-snow;
+    font-size: 54px;
+    text-transform: uppercase;
+
+    @media(min-width: 600px) {
+      justify-content: center;
+      margin-left: 80px;
+      font-size: 64px;
+    }
+
+    @media(min-width: 1300px) {
+      @include adaptive-by-width(font-size, 240, 210, 1920, 1300);
+      justify-content: center;
+    }
+
+    @media(min-width: 1900px) {
+      font-size: 240px;
+      justify-content: center;
+    }
+  }
+
+  // .competencies__section
+  &__section {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+    align-items: center;
+    max-width: 100vw;
+
+    @media(min-width: 601px) {
+      width: 240px;
+      flex-direction: column;
+      margin-bottom: 0;
+      align-items: flex-start;
+    }
+
+    @media(min-width: 1301px) {
+      @include adaptive-by-width(width, 320, 240, 1920, 1300);
+      //width: 320px;
+    }
+  }
+
+  // .competencies__icon
+  &__icon {
+    width: 20px;
+    height: 20px;
+    @media(min-width: 601px) {
+      width: auto;
+      height: auto;
+    }
+  }
+
+  // .competencies__text
+  &__text {
+    font-family: 'Grandis';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 32px;
+    color: $color-main-ash;
+    margin-left: 7px;
+
+    @media(min-width: 600px) {
+      margin-left: 0px;
+      padding-top: 24px;
+      @include adaptive-by-width(font-size, 20, 12, 1000, 600);
+    }
+
+    @media(min-width: 1001px) {
+      font-size: 20px;
+    }
+  }
+
+  .integrations {
+    width: 350px;
+    align-items: flex-start;
+
+    @media(min-width: 600px) {
+      width: 500px;
+    }
+
+    @media(min-width: 1301px) {
+      width: 670px;
+    }
+  }
+
+  .integrations-icon {
+    height: 20px;
+    width: 40px;
+
+    @media(min-width: 601px) {
+      height: auto;
+      width: auto;
+    }
+  }
+}
