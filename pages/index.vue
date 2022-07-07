@@ -7,8 +7,8 @@
     <main ref="main" class="main-page">
       <HeroSection />
       <UseSection />
-      <CompetenciesSection />
       <SpecializationSection />
+      <CompetenciesSection />
   </main>
   </div>
 </template>
