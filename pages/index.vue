@@ -9,6 +9,7 @@
       <UseSection />
       <SpecializationSection />
       <CompetenciesSection />
+      <PortfolioSection />
   </main>
   </div>
 </template>
@@ -18,10 +19,11 @@ import HeroSection from '~/components/sections/hero/hero-section'
 import UseSection from '~/components/sections/use/use-section'
 import SpecializationSection from '~/components/sections/specialization/specialization-section'
 import CompetenciesSection from '~/components/sections/competencies/competencies-sections'
+import PortfolioSection from '~/components/sections/portfolio/portfolio-section'
 import Header from '~/components/base/header/header'
 
 export default {
-  components: { HeroSection, UseSection, SpecializationSection, Header, CompetenciesSection },
+  components: { HeroSection, UseSection, SpecializationSection, Header, CompetenciesSection, PortfolioSection },
 
   data() {
     return {
