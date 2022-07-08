@@ -35,5 +35,5 @@ export {
   IconPhone,
   IconLogoMob,
   IconBurger,
-  IconX
+  IconX,
 }

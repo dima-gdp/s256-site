@@ -5,8 +5,7 @@
   padding-left: 10px;
   padding-right: 10px;
 
-
-  @media(min-width: 1078px) {
+  @media (min-width: 1078px) {
     margin-right: 226px;
     width: 1048px;
     flex: 0 0 1048px;
@@ -27,11 +26,11 @@
     margin-bottom: 38px;
     color: $color-main-snow;
 
-    @media(min-width: $breakpoint-xs) {
-      @include adaptive-by-width(font-size, 48, 24, 1048, 320)
+    @media (min-width: $breakpoint-xs) {
+      @include adaptive-by-width(font-size, 48, 24, 1048, 320);
     }
 
-    @media(min-width: 1048px) {
+    @media (min-width: 1048px) {
       font-size: 48px;
       margin-bottom: 64px;
     }
@@ -45,18 +44,18 @@
     display: none;
     margin-right: 20px;
     width: 150px;
-    @media(min-width: $breakpoint-md) {
-     display: block;
-     @include adaptive-by-width(margin-right, 85, 20, 1047, 600);
-     @include adaptive-by-width(width, 340, 150, 1047, 600);
+    @media (min-width: $breakpoint-md) {
+      display: block;
+      @include adaptive-by-width(margin-right, 85, 20, 1047, 600);
+      @include adaptive-by-width(width, 340, 150, 1047, 600);
     }
 
-    @media(min-width: 1047px) {
+    @media (min-width: 1047px) {
       width: 340px;
       margin-right: 85px;
-     }
+    }
 
-    @media(max-height: 690px) {
+    @media (max-height: 690px) {
       max-width: 250px;
     }
   }
@@ -67,19 +66,19 @@
       font-size: 18px;
       color: $color-main-ash;
 
-      @media(min-width: $breakpoint-xs) {
-        @include adaptive-by-width(font-size, 32, 18, 1048, 320)
+      @media (min-width: $breakpoint-xs) {
+        @include adaptive-by-width(font-size, 32, 18, 1048, 320);
       }
 
-      @media(min-width: 1048px) {
+      @media (min-width: 1048px) {
         font-size: 32px;
         &:not(:last-child) {
           margin-bottom: 12px;
-         }
+        }
       }
 
       &:not(:last-child) {
-       margin-bottom: 4px;
+        margin-bottom: 4px;
       }
 
       &::before {

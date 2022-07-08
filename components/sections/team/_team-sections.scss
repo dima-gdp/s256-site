@@ -5,7 +5,7 @@
   align-content: center;
   @include adaptive-by-width(margin-right, 200, 50, 1495, 300);
 
-  @media(min-width: 501px) {
+  @media (min-width: 501px) {
     grid-template-rows: repeat(2, 350px);
   }
 
@@ -22,11 +22,11 @@
   &__img {
     width: 186px;
 
-    @media(min-width: 501px) {
+    @media (min-width: 501px) {
       width: 200px;
     }
 
-    @media(min-width: 1000px) {
+    @media (min-width: 1000px) {
       width: 294px;
     }
   }
@@ -38,7 +38,7 @@
     margin-bottom: 0;
     font-size: 12px;
 
-    @media(min-width: 501px) {
+    @media (min-width: 501px) {
       margin-bottom: 15px;
       font-size: 20px;
     }
@@ -50,7 +50,7 @@
     color: $color-main-ash;
     font-size: 12px;
 
-    @media(min-width: 501px) {
+    @media (min-width: 501px) {
       font-size: 20px;
     }
   }

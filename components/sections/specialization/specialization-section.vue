@@ -37,8 +37,8 @@
         <ul class="specialization__list">
           <li
             v-for="(s, i) in $options.specializationList"
-            class="text-big"
             :key="i"
+            class="text-big"
           >
             {{ s }}
           </li>

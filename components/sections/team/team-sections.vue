@@ -2,7 +2,7 @@
   <div class="team container padding-top padding-bottom">
     <ul v-for="(t, i) in $options.team" :key="i" class="team__list">
       <div class="team__img-wrapper">
-        <img  class="team__img" :src="t.srcset" />
+        <img class="team__img" :src="t.srcset" />
       </div>
       <div class="team__name text-main">
         {{ t.name }}

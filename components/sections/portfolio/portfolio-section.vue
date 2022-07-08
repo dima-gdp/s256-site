@@ -1,7 +1,7 @@
 <template>
   <div class="portfolio container padding-top padding-bottom">
     <ul class="portfolio__list">
-      <li v-for="(p, i) in $options.portfolio" class="portfolio-item" :key="i">
+      <li v-for="(p, i) in $options.portfolio" :key="i" class="portfolio-item">
         <div class="portfolio-item__top">
           <div class="portfolio-item__title text-super">
             <span>{{ p.title }}</span>
@@ -16,10 +16,10 @@
           <picture>
             <source
               v-for="(s, idx) in p.sources"
+              :key="idx"
               :type="s.type"
               :srcset="s.srcset"
               :sizes="p.sizes"
-              :key="idx"
             />
             <img class="portfolio-item__main-img" :src="p.img" :alt="p.badge" />
           </picture>

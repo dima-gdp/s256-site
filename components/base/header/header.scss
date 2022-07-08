@@ -6,11 +6,11 @@
   height: 42px;
   z-index: 11;
 
-  @media(min-width: 400px) {
+  @media (min-width: 400px) {
     height: 50px;
   }
 
-  @media(min-width: 1020px) {
+  @media (min-width: 1020px) {
     height: 73px;
   }
   // .header__container
@@ -19,8 +19,7 @@
     justify-content: space-between;
     padding: 10px 5px 0 10px;
 
-
-    @media(min-width: 400px) {
+    @media (min-width: 400px) {
       padding: 14px 20px 0 20px;
     }
   }
@@ -29,7 +28,7 @@
   &__logo {
     margin-right: 30px;
 
-    @media(min-width: 1256px) {
+    @media (min-width: 1256px) {
       margin-right: 65px;
     }
   }
@@ -38,13 +37,13 @@
     display: none;
     margin-right: 40px;
 
-    @media(min-width: 1020px) {
+    @media (min-width: 1020px) {
       display: flex;
     }
 
     li {
       &:not(:last-child) {
-       margin-right: 20px;
+        margin-right: 20px;
       }
 
       a {
@@ -55,7 +54,7 @@
         white-space: nowrap;
         transition: color 0.3s;
 
-        @media(min-width: 1256px) {
+        @media (min-width: 1256px) {
           font-size: 20px;
         }
 
@@ -71,25 +70,22 @@
     margin-right: 10px;
     order: 2;
 
-    @media(min-width: 1020px) {
+    @media (min-width: 1020px) {
       order: 1;
       margin-right: 35px;
     }
 
-    @media(min-width: 1256px) {
-
+    @media (min-width: 1256px) {
     }
 
-    @media(min-width: 1310px) {
+    @media (min-width: 1310px) {
       margin-right: 113px;
     }
-
   }
 
   // .header__request
   &__request {
     order: 1;
-
   }
   // .header__burger
   &__burger {
@@ -102,7 +98,7 @@
     user-select: none;
     position: relative;
 
-    @media(min-width: 1020px) {
+    @media (min-width: 1020px) {
       display: none;
     }
 
@@ -121,7 +117,7 @@
   left: 50%;
   transform: translateX(-50%);
 
-  @media(min-width: 1020px) {
+  @media (min-width: 1020px) {
     position: relative;
     top: auto;
     left: auto;
@@ -140,12 +136,11 @@
     position: relative;
     z-index: 1;
 
-
-    @media(min-width: 400px) {
+    @media (min-width: 400px) {
       font-size: 16px;
     }
 
-    @media(min-width: 1020px) {
+    @media (min-width: 1020px) {
       font-size: 20px;
     }
   }
@@ -157,13 +152,12 @@
     color: $color-main-acid;
     width: 88px;
 
-    @media(min-width: 400px) {
+    @media (min-width: 400px) {
       top: -13px;
       left: 20px;
     }
 
-
-    @media(min-width: 1020px) {
+    @media (min-width: 1020px) {
       width: auto;
       top: -8px;
       left: 20px;
@@ -179,7 +173,7 @@
     width: 47px;
     height: 53px;
 
-    @media(min-width: 1020px) {
+    @media (min-width: 1020px) {
       display: block;
     }
   }
@@ -187,7 +181,7 @@
   &__mob {
     width: 65px;
     height: 22px;
-    @media(min-width: 1020px) {
+    @media (min-width: 1020px) {
       display: none;
     }
   }
@@ -205,7 +199,7 @@
     font-weight: 500;
     color: $color-main-snow;
 
-    @media(min-width: 1256px) {
+    @media (min-width: 1256px) {
       display: block;
     }
   }
@@ -216,7 +210,7 @@
     line-height: 2.67;
     color: $color-main-ash;
 
-    @media(min-width: 1256px) {
+    @media (min-width: 1256px) {
       display: block;
     }
   }
@@ -225,13 +219,11 @@
     display: block;
     color: $color-main-snow;
 
-    @media(min-width: 1256px) {
+    @media (min-width: 1256px) {
       display: none;
     }
   }
 }
-
-
 
 .mob-menu {
   position: fixed;
@@ -251,7 +243,7 @@
 
     li {
       &:not(:last-child) {
-       margin-bottom: 8px;
+        margin-bottom: 8px;
       }
 
       a {
@@ -282,4 +274,3 @@
     }
   }
 }
-

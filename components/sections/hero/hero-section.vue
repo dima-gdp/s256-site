@@ -1,5 +1,5 @@
 <template>
-  <section class="hero container padding-top" ref="hero">
+  <section ref="hero" class="hero container padding-top">
     <h1 ref="title" class="hero__title text-h1">
       <span>
         <span>Мы Создаём</span>

@@ -3,27 +3,31 @@
     <div class="competencies__container">
       <div class="competencies__content">
         <div class="competencies__section">
-            <IconAnalytics class="competencies__icon" />
-          <span class="competencies__text">Аналитика и&nbsp;проектирование</span>
+          <IconAnalytics class="competencies__icon" />
+          <span class="competencies__text"
+            >Аналитика и&nbsp;проектирование</span
+          >
         </div>
         <div class="competencies__section">
-            <IconDesign class="competencies__icon" />
-          <span class="competencies__text">Продуктовый дизайн и&nbsp;айдентика</span>
+          <IconDesign class="competencies__icon" />
+          <span class="competencies__text"
+            >Продуктовый дизайн и&nbsp;айдентика</span
+          >
         </div>
         <div class="competencies__section">
-            <IconSoftware class="competencies__icon" />
+          <IconSoftware class="competencies__icon" />
           <span class="competencies__text">
             Разработка программного&nbsp;обеспечения
           </span>
         </div>
         <div class="competencies__section">
-            <IconTesting class="competencies__icon" />
+          <IconTesting class="competencies__icon" />
           <span class="competencies__text">
             Тестирование и&nbsp;контроль качества
           </span>
         </div>
         <div class="competencies__section">
-            <IconSupport class="competencies__icon" />
+          <IconSupport class="competencies__icon" />
           <span class="competencies__text">
             Поддержка и&nbsp;развитие продукта
           </span>
@@ -36,8 +40,10 @@
 
       <div class="competencies__content">
         <div class="competencies__section">
-            <IconInstrumentConnection  class="competencies__icon"/>
-          <span class="competencies__text"> Подключение&nbsp;BI-инструментов </span>
+          <IconInstrumentConnection class="competencies__icon" />
+          <span class="competencies__text">
+            Подключение&nbsp;BI-инструментов
+          </span>
         </div>
         <div class="competencies__section">
           <IconArrows class="competencies__icon" />
@@ -50,9 +56,12 @@
           <span class="competencies__text"> Маркетинг и&nbsp;продвижение </span>
         </div>
         <div class="competencies__section integrations">
-          <IconTypesOfIntegrations class="competencies__icon integrations-icon" />
+          <IconTypesOfIntegrations
+            class="competencies__icon integrations-icon"
+          />
           <span class="competencies__text">
-            Все виды интеграций: платёжные системы, рассылки, кассы, CRM и&nbsp;ERP-системы, интеграции 1С
+            Все виды интеграций: платёжные системы, рассылки, кассы, CRM
+            и&nbsp;ERP-системы, интеграции 1С
           </span>
         </div>
       </div>

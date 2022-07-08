@@ -12,7 +12,7 @@
       <CompetenciesSection />
       <PortfolioSection />
       <PriceSection />
-  </main>
+    </main>
   </div>
 </template>
 
@@ -27,7 +27,16 @@ import PriceSection from '~/components/sections/price/price-section'
 import Header from '~/components/base/header/header'
 
 export default {
-  components: { HeroSection, UseSection, SpecializationSection, Header, CompetenciesSection, PortfolioSection, TeamSection, PriceSection },
+  components: {
+    HeroSection,
+    UseSection,
+    SpecializationSection,
+    Header,
+    CompetenciesSection,
+    PortfolioSection,
+    TeamSection,
+    PriceSection,
+  },
 
   data() {
     return {

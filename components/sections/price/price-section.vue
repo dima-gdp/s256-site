@@ -34,8 +34,8 @@
           <ul class="price__list">
             <li
               v-for="(p, idx) in $options.priceList"
-              class="price__col"
               :key="idx"
+              class="price__col"
             >
               <div class="price__item item-price">
                 <span class="item-price__title text-super">{{ p.title }}</span>
