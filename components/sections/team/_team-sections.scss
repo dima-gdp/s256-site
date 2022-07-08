@@ -3,6 +3,7 @@
   grid-template-columns: repeat(5, 2fr);
   grid-template-rows: repeat(2, 200px);
   align-content: center;
+  @include adaptive-by-width(margin-right, 200, 50, 1495, 300);
 
   @media(min-width: 501px) {
     grid-template-rows: repeat(2, 350px);
